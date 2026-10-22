@@ -1,0 +1,20 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-site-content {
+  flex: 1 0 auto;
+
+  &.admin-layout {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+

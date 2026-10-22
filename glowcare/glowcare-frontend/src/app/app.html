@@ -1,0 +1,10 @@
+@if (!isAdminRoute()) {
+  <app-header></app-header>
+}
+<main class="main-site-content" [class.admin-layout]="isAdminRoute()" id="main-content">
+  <router-outlet></router-outlet>
+</main>
+@if (!isAdminRoute()) {
+  <app-footer></app-footer>
+}
+<app-toast></app-toast>
